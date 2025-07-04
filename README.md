@@ -5,12 +5,12 @@ Uma coleção de jogos clássicos e criativos desenvolvidos para diversão e apr
 ## 🕹️ Jogos Disponíveis
 
 - ✅ **Jogo da Forca** – Adivinhe a palavra letra por letra.
+- ✅ **Campo Minado** – Um jogo minimalista com desafios rápidos.
 - ✅ **Palavras Cruzadas** – Complete o quadro com as palavras certas.
-- ✅ **Caça Palavras** – Encontre palavras escondidas no meio da grade.
 - ✅ **Jogo do Milhão** – Quiz inspirado no famoso programa de TV.
+- ✅ **Caça Palavras** – Encontre palavras escondidas no meio da grade.
 - ✅ **Sudoku** – Complete o tabuleiro com lógica e raciocínio.
 - ✅ **Quase Nada** – Um jogo minimalista com desafios rápidos.
-- ✅ **Campo Minado** – Um jogo minimalista com desafios rápidos.
 - ✅ **Termo** – Adivinhe a palavra do dia em até 6 tentativas.
 - ✅ **Dueto** – Descubra duas palavras ao mesmo tempo.
 - ✅ **Quarteto** – Um desafio com quatro palavras para adivinhar.

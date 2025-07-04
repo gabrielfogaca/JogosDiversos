@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-export default function Navbar() {
+export default function Navbar({ jogoAtivo, onSelectGame }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div className="container">
@@ -24,7 +24,7 @@ export default function Navbar() {
 
         <div className="collapse navbar-collapse" id="navbarGames">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            {/* Dropdown de Jogos */}
+            {/* Dropdown Jogos */}
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -36,60 +36,112 @@ export default function Navbar() {
               >
                 Jogos
               </a>
+
               <ul
                 className="dropdown-menu dropdown-menu-end"
                 aria-labelledby="jogosDropdown"
               >
                 <li>
-                  <a className="dropdown-item" href="#forca">
+                  <button
+                    className={`dropdown-item ${
+                      jogoAtivo === 'forca' ? 'active' : ''
+                    }`}
+                    onClick={() => onSelectGame('forca')}
+                  >
                     Jogo da Forca
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#palavras-cruzadas">
+                  <button
+                    className={`dropdown-item ${
+                      jogoAtivo === 'palavras-cruzadas' ? 'active' : ''
+                    }`}
+                    onClick={() => onSelectGame('palavras-cruzadas')}
+                  >
                     Palavras Cruzadas
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#caca-palavras">
+                  <button
+                    className={`dropdown-item ${
+                      jogoAtivo === 'caca-palavras' ? 'active' : ''
+                    }`}
+                    onClick={() => onSelectGame('caca-palavras')}
+                  >
                     Caça Palavras
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#milhao">
+                  <button
+                    className={`dropdown-item ${
+                      jogoAtivo === 'milhao' ? 'active' : ''
+                    }`}
+                    onClick={() => onSelectGame('milhao')}
+                  >
                     Jogo do Milhão
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#sudoku">
+                  <button
+                    className={`dropdown-item ${
+                      jogoAtivo === 'sudoku' ? 'active' : ''
+                    }`}
+                    onClick={() => onSelectGame('sudoku')}
+                  >
                     Sudoku
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#quase-nada">
+                  <button
+                    className={`dropdown-item ${
+                      jogoAtivo === 'quase-nada' ? 'active' : ''
+                    }`}
+                    onClick={() => onSelectGame('quase-nada')}
+                  >
                     Quase Nada
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#campo-minado">
+                  <button
+                    className={`dropdown-item ${
+                      jogoAtivo === 'campominado' ? 'active' : ''
+                    }`}
+                    onClick={() => onSelectGame('campominado')}
+                  >
                     Campo Minado
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#termo">
+                  <button
+                    className={`dropdown-item ${
+                      jogoAtivo === 'termo' ? 'active' : ''
+                    }`}
+                    onClick={() => onSelectGame('termo')}
+                  >
                     Termo
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#dueto">
+                  <button
+                    className={`dropdown-item ${
+                      jogoAtivo === 'dueto' ? 'active' : ''
+                    }`}
+                    onClick={() => onSelectGame('dueto')}
+                  >
                     Dueto
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#quarteto">
+                  <button
+                    className={`dropdown-item ${
+                      jogoAtivo === 'quarteto' ? 'active' : ''
+                    }`}
+                    onClick={() => onSelectGame('quarteto')}
+                  >
                     Quarteto
-                  </a>
+                  </button>
                 </li>
+                {/* acrescente novos jogos aqui seguindo o padrão */}
               </ul>
             </li>
           </ul>
