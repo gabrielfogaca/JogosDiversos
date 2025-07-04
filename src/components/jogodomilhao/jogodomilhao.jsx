@@ -77,14 +77,14 @@ export default function JogoDoMilhao() {
       })),
     );
     setRespostasEmbaralhadas(embaralhadas);
-    console.log('Pergunta atual:', perguntaAtual.pergunta);
-    console.log(
-      'Respostas embaralhadas:',
-      embaralhadas[0].correta,
-      embaralhadas[1].correta,
-      embaralhadas[2].correta,
-      embaralhadas[3].correta,
-    );
+    // console.log('Pergunta atual:', perguntaAtual.pergunta);
+    // console.log(
+    //   'Respostas embaralhadas:',
+    //   embaralhadas[0].correta,
+    //   embaralhadas[1].correta,
+    //   embaralhadas[2].correta,
+    //   embaralhadas[3].correta,
+    // );
   }, [indice, perguntasSorteadas]);
 
   useEffect(() => {

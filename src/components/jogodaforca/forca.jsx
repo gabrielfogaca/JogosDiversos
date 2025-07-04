@@ -50,7 +50,7 @@ export default function Forca() {
         const resp = await fetch('https://api.dicionario-aberto.net/random');
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
         const json = await resp.json();
-        console.log('🔤 Palavra retornada da API:', json); // 👈 Aqui!
+        // console.log('🔤 Palavra retornada da API:', json); // 👈 Aqui!
         const bruta = json.word || '';
         const limpa = normalizarPalavra(bruta);
 
