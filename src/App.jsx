@@ -5,14 +5,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Forca from './components/jogodaforca/Forca';
 import CampoMinado from './components/campominado/CampoMinado';
+import JogoDoMilhao from './components/jogodomilhao/JogoDoMilhao';
 
 export default function App() {
-  const [jogoAtivo, setJogoAtivo] = useState('forca'); // forca | campominado | ...
+  const [jogoAtivo, setJogoAtivo] = useState('forca'); // 'forca' | 'campominado' | 'jogodomilhao'
 
   const renderJogo = () => {
     switch (jogoAtivo) {
       case 'campominado':
         return <CampoMinado />;
+      case 'jogodomilhao':
+        return <JogoDoMilhao />;
       case 'forca':
       default:
         return <Forca />;
@@ -21,7 +24,6 @@ export default function App() {
 
   return (
     <>
-      {/* passa callback para a navbar */}
       <Navbar onSelectGame={setJogoAtivo} jogoAtivo={jogoAtivo} />
       {renderJogo()}
     </>

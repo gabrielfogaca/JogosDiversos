@@ -74,9 +74,9 @@ export default function Navbar({ jogoAtivo, onSelectGame }) {
                 <li>
                   <button
                     className={`dropdown-item ${
-                      jogoAtivo === 'milhao' ? 'active' : ''
+                      jogoAtivo === 'jogodomilhao' ? 'active' : ''
                     }`}
-                    onClick={() => onSelectGame('milhao')}
+                    onClick={() => onSelectGame('jogodomilhao')}
                   >
                     Jogo do Milhão
                   </button>
