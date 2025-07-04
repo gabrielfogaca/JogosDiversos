@@ -3,7 +3,6 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from './components/navbar';
-
 import Forca from './components/jogodaforca/Forca';
 import CampoMinado from './components/campominado/CampoMinado';
 import JogoDoMilhao from './components/jogodomilhao/JogoDoMilhao';
