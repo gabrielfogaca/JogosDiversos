@@ -3,9 +3,9 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from './components/navbar.jsx';
-import Forca from './components/Jogodaforca/Forca.jsx';
-import CampoMinado from './components/Campominado/CampoMinado.jsx';
-import JogoDoMilhao from './components/Jogodomilhao/JogoDoMilhao.jsx';
+import Forca from './components/jogodaforca/forca.jsx';
+import CampoMinado from './components/campominado/campoMinado.jsx';
+import JogoDoMilhao from './components/jogodomilhao/jogoDoMilhao.jsx';
 
 export default function App() {
   const [jogoAtivo, setJogoAtivo] = useState('forca'); // 'forca' | 'campominado' | 'jogodomilhao'
