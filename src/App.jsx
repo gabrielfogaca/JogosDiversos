@@ -2,10 +2,10 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Navbar from './components/navbar';
-import Forca from './components/jogodaforca/Forca';
-import CampoMinado from './components/campominado/CampoMinado';
-import JogoDoMilhao from './components/jogodomilhao/JogoDoMilhao';
+import Navbar from './components/navbar.jsx';
+import Forca from './components/jogodaforca/Forca.jsx';
+import CampoMinado from './components/Campominado/CampoMinado.jsx';
+import JogoDoMilhao from './components/jogodomilhao/JogoDoMilhao.jsx';
 
 export default function App() {
   const [jogoAtivo, setJogoAtivo] = useState('forca'); // 'forca' | 'campominado' | 'jogodomilhao'
