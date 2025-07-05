@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from './components/navbar.jsx';
 import Forca from './components/jogodaforca/forca.jsx';
-import CampoMinado from './components/campominado/campoMinado.jsx';
-import JogoDoMilhao from './components/jogodomilhao/jogoDoMilhao.jsx';
+import CampoMinado from './components/campominado/campominado.jsx';
+import JogoDoMilhao from './components/jogodomilhao/jogodomilhao.jsx';
 
 export default function App() {
   const [jogoAtivo, setJogoAtivo] = useState('forca'); // 'forca' | 'campominado' | 'jogodomilhao'
