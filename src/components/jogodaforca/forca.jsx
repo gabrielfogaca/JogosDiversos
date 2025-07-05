@@ -1,7 +1,6 @@
-// src/components/Forca.jsx
 import React, { useState, useEffect } from 'react';
-import TecladoVirtual from './TecladoVirtual';
-import './Forca.css';
+import TecladoVirtual from './tecladovirtual';
+import './forca.css';
 
 import forca1 from './imgs/forca1.png';
 import forca2 from './imgs/forca2.png';
