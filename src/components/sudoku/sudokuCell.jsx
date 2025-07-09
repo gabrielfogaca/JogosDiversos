@@ -1,4 +1,4 @@
-// src/sudoku/SudokuCell.jsx
+// src/sudoku/SudokuCell.jsx.
 import React from 'react';
 import './sudokucell.css';
 

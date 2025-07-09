@@ -1,4 +1,4 @@
-// src/sudoku/NumberSelector.jsx
+// src/sudoku/NumberSelector.jsx.
 import React from 'react';
 import './numberselector.css';
 

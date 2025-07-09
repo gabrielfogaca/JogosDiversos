@@ -9,7 +9,7 @@ export const isValidMove = (board, row, col, num) => {
     }
   }
 
-  // Checa a coluna
+  // Checa a coluna.
   for (let x = 0; x < 9; x++) {
     if (board[x][col] === num && x !== row) {
       return false;
