@@ -1,12 +1,12 @@
 // src/sudoku/SudokuBoard.jsx.
 import React, { useState, useEffect, useCallback } from 'react';
-import SudokuCell from './sudokucell';
-import NumberSelector from './numberselector';
+import SudokuCell from './temp-sudokucell';
+import NumberSelector from './temp-numberselector';
 import {
   isValidMove,
   isBoardSolved,
   getInitialBoardFromAPI,
-} from './sudokulogic';
+} from './temp-sudokulogic';
 import './SudokuBoard.css';
 
 const SudokuBoard = () => {
