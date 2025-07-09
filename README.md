@@ -1,6 +1,10 @@
-# 🎮 JogosDiversos
+# 🎮 Jogos Diversos
 
 Uma coleção de jogos clássicos e criativos desenvolvidos para diversão e aprendizado. Este projeto tem como objetivo recriar e modernizar jogos populares, sendo uma ótima forma de praticar programação e entreter ao mesmo tempo.
+
+## 🌐 Jogos Disponíveis no LINK:
+
+[jogos-diversos.vercel.app](https://jogos-diversos.vercel.app/)
 
 ## 🕹️ Jogos Disponíveis
 
