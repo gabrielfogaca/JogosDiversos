@@ -68,7 +68,7 @@ export const getInitialBoardFromAPI = async () => {
     }
     const data = await response.json();
 
-    console.log('JSON completo retornado pela API:', data); // Para depuração
+    // console.log('JSON completo retornado pela API:', data); // Para depuração
 
     // Extrai o tabuleiro inicial (com zeros)
     const initialBoard = data.newboard.grids[0].value;
