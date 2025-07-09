@@ -1,7 +1,7 @@
 // src/sudoku/SudokuBoard.jsx
 import React, { useState, useEffect, useCallback } from 'react';
-import SudokuCell from './SudokuCell';
-import NumberSelector from './NumberSelector';
+import SudokuCell from './sudokucell';
+import NumberSelector from './numberselector';
 import {
   isValidMove,
   isBoardSolved,

@@ -1,6 +1,6 @@
 // src/sudoku/NumberSelector.jsx
 import React from 'react';
-import './NumberSelector.css';
+import './numberselector.css';
 
 const NumberSelector = ({
   onSelectNumber,

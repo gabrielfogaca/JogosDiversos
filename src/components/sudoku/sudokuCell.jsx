@@ -1,6 +1,6 @@
 // src/sudoku/SudokuCell.jsx
 import React from 'react';
-import './SudokuCell.css';
+import './sudokucell.css';
 
 const SudokuCell = ({
   value,
