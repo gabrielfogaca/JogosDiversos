@@ -1,0 +1,76 @@
+/* SudokuCell.css */
+.sudoku-cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-align: center;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total */
+}
+
+.sudoku-cell.initial {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #333;
+}
+
+.sudoku-cell:focus {
+    outline: none;
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+}
+
+/* src/sudoku/SudokuCell.css */
+.sudoku-cell {
+    width: 45px; /* Tamanho da célula */
+    height: 45px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-sizing: border-box; /* Garante que padding e borda não aumentem o tamanho */
+    display: flex; /* Para centralizar conteúdo */
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: background-color 0.1s;
+}
+
+/* Bordas mais grossas para separar os blocos 3x3 */
+.sudoku-row:nth-child(3n) .sudoku-cell {
+    border-bottom-width: 3px;
+}
+
+.sudoku-row .sudoku-cell:nth-child(3n) {
+    border-right-width: 3px;
+}
+
+/* Borda superior e esquerda para a primeira célula de cada bloco */
+.sudoku-row:nth-child(3n + 1) .sudoku-cell:nth-child(3n + 1) {
+    /* Exemplo: Ajustes se necessário, pode não ser o padrão universal */
+}
+
+.sudoku-cell.initial {
+    background-color: #e0e0e0;
+    color: #333;
+    cursor: not-allowed;
+}
+
+.sudoku-cell.selected {
+    background-color: #a7d9ff; /* Azul claro para célula selecionada */
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+}
+
+.sudoku-cell.error {
+    background-color: #ffcccc; /* Vermelho claro para erro */
+    color: red;
+}
+
+/* Opcional: Estilo para células com valor não inicial, para diferenciá-las */
+.sudoku-cell:not(.initial) {
+    color: #007bff; /* Ou outra cor para números inseridos pelo usuário */
+}

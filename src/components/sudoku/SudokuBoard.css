@@ -1,0 +1,131 @@
+/* src/sudoku/SudokuBoard.css */
+.sudoku-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.difficulty-info {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Updated .game-area for three-column layout */
+.game-area {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: auto 1fr auto; /* Controls (auto), Board (flexible), Numbers (auto) */
+    gap: 20px; /* Space between columns */
+    align-items: flex-start; /* Align items to the top of their grid area */
+    margin-top: 20px;
+}
+
+/* Style for the left panel (game controls) */
+.game-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    align-self: center; /* Align to the start of its grid cell */
+}
+
+.game-controls button {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.game-controls button:hover {
+    background-color: #0056b3;
+}
+
+/* Wrapper to potentially center the board if the column isn't perfectly sized */
+.sudoku-board-wrapper {
+    display: flex;
+    justify-content: center; /* Center the board horizontally in its grid column */
+    align-items: center; /* Center vertically if needed */
+    height: 100%; /* Take full height of its grid cell */
+}
+
+.sudoku-board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    width: fit-content; /* Ensure the board itself doesn't stretch too much */
+    border: 3px solid #333;
+}
+
+.sudoku-row {
+    display: contents;
+}
+
+.game-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Ensure NumberSelector is styled correctly for its column */
+.number-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    align-self: start; /* Align to the start of its grid cell */
+}
+
+.number-selector button {
+    width: 50px; /* Slightly larger buttons for touch/click */
+    height: 50px;
+    font-size: 1.6em; /* Adjust font size */
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.number-selector button:hover:not(:disabled) {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.number-selector button:active:not(:disabled) {
+    background-color: #d0d0d0;
+}
+
+.number-selector button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.number-selector .hidden-number {
+    visibility: hidden;
+    /* You could also use display: none; but visibility: hidden maintains layout space */
+}
+
+/* You might want to remove the specific margin-right from NumberSelector.css if it clashes with grid gap */
+/* For SudokuCell.css, no changes are needed based on this layout update. */

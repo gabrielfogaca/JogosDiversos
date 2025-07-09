@@ -1,0 +1,41 @@
+/* src/sudoku/NumberSelector.css */
+.number-selector {
+    display: flex;
+    flex-direction: column; /* botões em coluna */
+    gap: 2px; /* Espaço entre os botões */
+    margin-right: 20px; /* Espaço entre o seletor e o tabuleiro */
+}
+
+.number-selector button {
+    width: 15px; /* Tamanho fixo para os botões */
+    height: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.number-selector button:hover:not(:disabled) {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.number-selector button:active:not(:disabled) {
+    background-color: #d0d0d0;
+}
+
+.number-selector button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.number-selector .hidden-number {
+    /* Estilo para quando o número deve "desaparecer" */
+    visibility: hidden; /* Oculta mas mantém o espaço */
+    /* ou display: none; para remover totalmente do fluxo */
+}

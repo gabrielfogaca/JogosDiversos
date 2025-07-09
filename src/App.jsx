@@ -1,14 +1,13 @@
-// src/App.jsx
 import { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Navbar from './components/navbar.jsx';
-import Forca from './components/jogodaforca/forca.jsx';
-import CampoMinado from './components/campominado/campominado.jsx';
+import Navbar from './components/navbar';
+import Homepage from './components/homepage';
+import Forca from './components/campominado/campominado.jsx';
 import JogoDoMilhao from './components/jogodomilhao/jogodomilhao.jsx';
+import CampoMinado from './components/jogodaforca/forca.jsx';
+import Sudoku from './components/sudoku/SudokuBoard.jsx';
 
 export default function App() {
-  const [jogoAtivo, setJogoAtivo] = useState('forca'); // 'forca' | 'campominado' | 'jogodomilhao'
+  const [jogoAtivo, setJogoAtivo] = useState('homepage');
 
   const renderJogo = () => {
     switch (jogoAtivo) {
@@ -17,8 +16,12 @@ export default function App() {
       case 'jogodomilhao':
         return <JogoDoMilhao />;
       case 'forca':
-      default:
         return <Forca />;
+      case 'Sudoku':
+        return <Sudoku />;
+      case 'homepage':
+      default:
+        return <Homepage onSelectGame={setJogoAtivo} />;
     }
   };
 
