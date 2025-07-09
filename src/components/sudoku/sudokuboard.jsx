@@ -1,4 +1,3 @@
-// src/sudoku/SudokuBoard.jsx.
 import React, { useState, useEffect, useCallback } from 'react';
 import SudokuCell from './sudokucell';
 import NumberSelector from './numberselector';
@@ -7,7 +6,7 @@ import {
   isBoardSolved,
   getInitialBoardFromAPI,
 } from './sudokulogic';
-import './SudokuBoard.css';
+import './sudokuboard.css';
 
 const SudokuBoard = () => {
   const [currentDifficulty, setCurrentDifficulty] = useState('N/A');

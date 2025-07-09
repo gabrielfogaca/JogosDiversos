@@ -1,5 +1,3 @@
-// src/sudoku/sudokuLogic.jsx
-
 // As funções isValidMove e isBoardSolved permanecem as mesmas
 export const isValidMove = (board, row, col, num) => {
   // Checa a linha
