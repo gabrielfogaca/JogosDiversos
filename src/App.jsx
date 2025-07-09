@@ -4,7 +4,7 @@ import Homepage from './components/homepage';
 import Forca from './components/campominado/campominado.jsx';
 import JogoDoMilhao from './components/jogodomilhao/jogodomilhao.jsx';
 import CampoMinado from './components/jogodaforca/forca.jsx';
-import Sudoku from './components/sudoku/SudokuBoard.jsx';
+import Sudoku from './components/sudoku/sudokuboard.jsx';
 
 export default function App() {
   const [jogoAtivo, setJogoAtivo] = useState('homepage');
