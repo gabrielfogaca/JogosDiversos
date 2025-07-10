@@ -148,6 +148,13 @@ export default function Forca() {
           </button>
         </div>
 
+        {/* Dica para o modo fácil */}
+        {modo === 'facil' && dica && (
+          <div className="mt-3 text-primary">
+            <strong>Dica:</strong> {dica}
+          </div>
+        )}
+
         <img
           src={imagensForca[Math.min(erros, 6)]}
           alt={`Forca ${erros}`}
@@ -166,13 +173,6 @@ export default function Forca() {
             desativado={perdeu || ganhou || !palavraSecreta}
           />
         </div>
-
-        {/* Dica para o modo fácil */}
-        {modo === 'facil' && dica && (
-          <div className="mt-3 text-primary">
-            <strong>Dica:</strong> {dica}
-          </div>
-        )}
 
         <button className="btn btn-primary mt-4" onClick={handleReiniciar}>
           Reiniciar Jogo
