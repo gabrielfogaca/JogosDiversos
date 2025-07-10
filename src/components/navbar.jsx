@@ -1,13 +1,24 @@
 import React from 'react';
+// Importa os estilos CSS do Bootstrap (já estava correto)
 import 'bootstrap/dist/css/bootstrap.min.css';
+// Importa os scripts JS do Bootstrap (já estava correto)
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Homepage from './homepage';
+
+// Se Homepage for um componente que você renderiza na rota '/', não precisa importá-lo aqui.
+// import Homepage from './homepage'; // Removido, pois não é usado diretamente aqui
 
 export default function Navbar({ jogoAtivo, onSelectGame }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div className="container">
-        <a className="navbar-brand" href={<Homepage />}>
+        {/*
+          AJUSTE AQUI: O href deve ser uma STRING de URL.
+          Se a intenção é ir para a página inicial, use "/".
+          Se você estiver usando React Router, usaria o componente <Link to="/">.
+        */}
+        <a className="navbar-brand" href="/">
+          {' '}
+          {/* Ajustado: href agora é uma string URL */}
           Jogos Diversos
         </a>
 
@@ -29,7 +40,7 @@ export default function Navbar({ jogoAtivo, onSelectGame }) {
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
-                href="#"
+                href="#" // Mantém href="#" para o dropdown (Bootstrap JS lida com isso)
                 id="jogosDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -142,7 +153,7 @@ export default function Navbar({ jogoAtivo, onSelectGame }) {
                     Quarteto
                   </button>
                 </li>
-                {/* acrescente novos jogos aqui seguindo o padrão */}
+                {/* Acrescente novos jogos aqui seguindo o padrão */}
               </ul>
             </li>
           </ul>
