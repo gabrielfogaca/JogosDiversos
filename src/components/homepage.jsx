@@ -1,4 +1,3 @@
-// src/components/Homepage.jsx (ou onde quer que sua Homepage esteja)
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -6,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 export default function Homepage({ onSelectGame }) {
-  // Mapeamento dos jogos: agora é um ARRAY de objetos para facilitar a iteração
   const gamesList = [
     { id: 'forca', name: 'Jogo da Forca' },
     { id: 'palavras-cruzadas', name: 'Palavras Cruzadas' },
@@ -18,7 +16,6 @@ export default function Homepage({ onSelectGame }) {
     { id: 'dueto', name: 'Dueto' },
     { id: 'quarteto', name: 'Quarteto' },
     { id: 'campominado', name: 'Campo Minado' },
-    // Adicione ou reordene seus jogos aqui conforme a necessidade
   ];
 
   // Divide a lista de jogos em grupos de 3 para as linhas
