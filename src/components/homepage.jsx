@@ -14,10 +14,10 @@ export default function Homepage({ onSelectGame }) {
     { id: 'jogodomilhao', name: 'Jogo do Milhão' },
     { id: 'sudoku', name: 'Sudoku' },
     { id: 'quase-nada', name: 'Quase Nada' },
-    { id: 'campominado', name: 'Campo Minado' },
     { id: 'termo', name: 'Termo' },
     { id: 'dueto', name: 'Dueto' },
     { id: 'quarteto', name: 'Quarteto' },
+    { id: 'campominado', name: 'Campo Minado' },
     // Adicione ou reordene seus jogos aqui conforme a necessidade
   ];
 

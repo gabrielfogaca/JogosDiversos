@@ -1,15 +1,15 @@
 /* src/sudoku/NumberSelector.css */
 .number-selector {
+    height: fit-content;
     display: flex;
     flex-direction: column; /* botões em coluna */
     gap: 2px; /* Espaço entre os botões */
-    margin-right: 20px; /* Espaço entre o seletor e o tabuleiro */
+    margin-right: 10px; /* Espaço entre o seletor e o tabuleiro */
 }
 
 .number-selector button {
-    width: 15px; /* Tamanho fixo para os botões */
-    height: 15px;
-    font-size: 1.5em;
+    height: 36px;
+    font-size: 1rem;
     font-weight: bold;
     background-color: #f0f0f0;
     border: 1px solid #ccc;

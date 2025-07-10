@@ -26,16 +26,23 @@ const SudokuBoard = () => {
     try {
       const { initialBoard, solutionBoard, difficulty } =
         await getInitialBoardFromAPI();
+
+      // Perform state updates after fetching the board
       setBoard(JSON.parse(JSON.stringify(initialBoard)));
       setInitialBoardState(JSON.parse(JSON.stringify(initialBoard)));
       setSolutionBoard(JSON.parse(JSON.stringify(solutionBoard)));
       setCurrentDifficulty(difficulty);
+
+      // --- ADDED DELAY HERE ---
+      // Wait for 10 seconds before proceeding
+      await new Promise((resolve) => setTimeout(resolve, 2000)); // 10000 ms = 10 seconds
+      // --- END ADDED DELAY ---
     } catch (err) {
       setError('Falha ao carregar o tabuleiro. Tente novamente.');
       console.error(err);
       setCurrentDifficulty('Erro');
     } finally {
-      setLoading(false);
+      setLoading(false); // This will now execute after the 10-second delay
     }
   }, []);
 
@@ -101,7 +108,9 @@ const SudokuBoard = () => {
     return (
       <div className="sudoku-container">
         <h1>Sudoku Game</h1>
-        <p>Carregando tabuleiro...</p>
+        <div className="loading-indicator">
+          <span class="loader"></span>
+        </div>
       </div>
     );
   }
