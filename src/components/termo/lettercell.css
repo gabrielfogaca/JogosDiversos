@@ -1,0 +1,43 @@
+/* src/termo/LetterCell.css */
+.letter-cell {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #d3d6da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px;
+  border-radius: 4px;
+  box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total */
+}
+
+/* Cores de feedback */
+.letter-cell.empty {
+  background-color: #ffffff; /* Fundo padrão para células vazias */
+}
+
+.letter-cell.typed {
+  background-color: #ffffff; /* Fundo para letras digitadas antes do check */
+  border-color: #878a8c;
+}
+
+.letter-cell.gray {
+  background-color: #787c7e;
+  color: white;
+  border-color: #787c7e;
+}
+
+.letter-cell.yellow {
+  background-color: #c9b458;
+  color: white;
+  border-color: #c9b458;
+}
+
+.letter-cell.green {
+  background-color: #6aaa64;
+  color: white;
+  border-color: #6aaa64;
+}

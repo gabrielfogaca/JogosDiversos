@@ -7,6 +7,7 @@ import JogoDaForca from './components/jogodaforca/forca.jsx';
 import CampoMinado from './components/campominado/campominado.jsx';
 import JogoDoMilhao from './components/jogodomilhao/jogodomilhao.jsx';
 import SudokuBoard from './components/sudoku/sudokuboard.jsx';
+import TermoGame from './components/termo/termogame.jsx';
 
 export default function App() {
   const [jogoAtivo, setJogoAtivo] = useState('homepage');
@@ -21,6 +22,8 @@ export default function App() {
         return <JogoDaForca />;
       case 'sudoku':
         return <SudokuBoard />;
+      case 'termo': // <--- Novo case para o jogo Termo
+        return <TermoGame />;
       case 'homepage':
       default:
         return <Homepage onSelectGame={setJogoAtivo} />;
