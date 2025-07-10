@@ -3,7 +3,7 @@ import React from 'react';
 import LetterCell from './lettercell';
 import { WORD_LENGTH } from './termowords'; // Importe o comprimento da palavra
 
-import './GuessRow.css'; // Crie este CSS para o layout da linha
+import './guessrow.css'; // Crie este CSS para o layout da linha
 
 const GuessRow = ({ guess, solutionFeedback, isCurrentGuess }) => {
   const cells = [];
