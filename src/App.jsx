@@ -1,10 +1,16 @@
 import { useState } from 'react';
 import Navbar from './components/navbar';
 import Homepage from './components/homepage';
-import Forca from './components/campominado/campominado.jsx';
+
+// --- AJUSTES AQUI ---
+
+// Importe o COMPONENTE CORRETO e chame-o pelo NOME CORRETO
+import JogoDaForca from './components/jogodaforca/forca.jsx'; // Nome da pasta/arquivo é 'jogodaforca/forca.jsx'
+import CampoMinado from './components/campominado/campominado.jsx'; // Nome da pasta/arquivo é 'campominado/campominado.jsx'
 import JogoDoMilhao from './components/jogodomilhao/jogodomilhao.jsx';
-import CampoMinado from './components/jogodaforca/forca.jsx';
-import Sudoku from './components/sudoku/sudokuboard.jsx';
+import SudokuBoard from './components/sudoku/sudokuboard.jsx'; // Nomeei para SudokuBoard para ser mais claro
+
+// --- FIM DOS AJUSTES DE IMPORTAÇÃO ---
 
 export default function App() {
   const [jogoAtivo, setJogoAtivo] = useState('homepage');
@@ -16,9 +22,10 @@ export default function App() {
       case 'jogodomilhao':
         return <JogoDoMilhao />;
       case 'forca':
-        return <Forca />;
-      case 'Sudoku':
-        return <Sudoku />;
+        // Agora 'forca' retorna o componente correto
+        return <JogoDaForca />;
+      case 'sudoku': // <-- Mudei para 'sudoku' (tudo minúsculo) para consistência
+        return <SudokuBoard />; // Retorna o componente SudokuBoard
       case 'homepage':
       default:
         return <Homepage onSelectGame={setJogoAtivo} />;
