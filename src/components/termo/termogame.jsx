@@ -1,6 +1,6 @@
 // src/termo/TermoGame.jsx
 import React, { useState, useEffect, useCallback } from 'react';
-import GuessRow from './guessRow';
+import GuessRow from './guessrow';
 import TermoKeyboard from './termokeyboard';
 import {
   WORD_LENGTH,
