@@ -10,7 +10,7 @@ import {
   allValidWords,
   checkGuess,
   normalizeWord,
-} from './gameUtils';
+} from './gameutils';
 
 import './duetogame.css';
 const DuetoGame = () => {
