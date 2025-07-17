@@ -131,7 +131,7 @@ const TermoGame = () => {
 
       const key = event.key.toUpperCase();
 
-      if (key === 'BACKSPACE' || key === 'DEL') {
+      if (key === 'BACKSPACE' || key === '←' || key === 'DEL') {
         setCurrentGuess((prev) => prev.slice(0, -1));
       } else if (key === 'ENTER') {
         handleEnter();
@@ -156,7 +156,7 @@ const TermoGame = () => {
     (key) => {
       if (gameStatus !== 'playing') return;
 
-      if (key === 'BACKSPACE') {
+      if (key === 'BACKSPACE' || key === '←') {
         setCurrentGuess((prev) => prev.slice(0, -1));
       } else if (key === 'ENTER') {
         handleEnter();
