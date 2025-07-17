@@ -1,0 +1,97 @@
+/* src/components/Dueto/TermoKeyboard.css */
+
+.keyboard {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ecf0f1; /* Fundo do teclado */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Espaçamento entre as linhas */
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px; /* Espaçamento entre as teclas */
+}
+
+.key {
+  background-color: #d3d6da; /* Cor padrão da tecla */
+  border: none;
+  border-radius: 6px;
+  padding: 15px 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  color: #1a1a1b;
+  min-width: 45px; /* Largura mínima da tecla */
+  height: 55px; /* Altura da tecla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+  user-select: none; /* Impede seleção de texto */
+}
+
+.key:hover {
+  background-color: #c5c9cc;
+}
+
+.key:active {
+  transform: translateY(1px); /* Pequeno efeito de clique */
+}
+
+/* Teclas maiores */
+.key.big-key {
+  flex-grow: 1; /* Faz ENTER e BACKSPACE ocuparem mais espaço */
+  min-width: 70px;
+  font-size: 0.9em;
+  padding: 15px 5px; /* Ajusta padding para texto menor */
+}
+
+/* Estilos de feedback das teclas */
+.key.green {
+  background-color: #6aaa64;
+  color: white;
+}
+
+.key.yellow {
+  background-color: #c9b458;
+  color: white;
+}
+
+.key.gray {
+  background-color: #787c7e;
+  color: white;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  .keyboard-row {
+    gap: 4px;
+  }
+  .key {
+    min-width: 35px;
+    height: 45px;
+    font-size: 0.9em;
+    padding: 10px 5px;
+  }
+  .key.big-key {
+    min-width: 60px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  .key {
+    min-width: 30px;
+    height: 40px;
+    font-size: 0.8em;
+  }
+  .key.big-key {
+    min-width: 50px;
+    font-size: 0.7em;
+  }
+}
