@@ -6,16 +6,16 @@ import Button from 'react-bootstrap/Button';
 
 export default function Homepage({ onSelectGame }) {
   const gamesList = [
-    { id: 'forca', name: 'Jogo da Forca' },
-    { id: 'palavras-cruzadas', name: 'Palavras Cruzadas' },
-    { id: 'caca-palavras', name: 'Caça Palavras' },
-    { id: 'jogodomilhao', name: 'Jogo do Milhão' },
-    { id: 'sudoku', name: 'Sudoku' },
-    { id: 'quase-nada', name: 'Quase Nada' },
-    { id: 'termo', name: 'Termo' },
-    { id: 'dueto', name: 'Dueto' },
-    { id: 'quarteto', name: 'Quarteto' },
-    { id: 'campominado', name: 'Campo Minado' },
+    { id: 'forca', name: 'Jogo da Forca [✅]' },
+    { id: 'palavras-cruzadas', name: 'Palavras Cruzadas [❌]' },
+    { id: 'caca-palavras', name: 'Caça Palavras [❌]' },
+    { id: 'jogodomilhao', name: 'Jogo do Milhão [✅]' },
+    { id: 'sudoku', name: 'Sudoku [✅]' },
+    { id: 'quase-nada', name: 'Quase Nada [❌]' },
+    { id: 'termo', name: 'Termo [✅]' },
+    { id: 'dueto', name: 'Dueto [✅]' },
+    { id: 'quarteto', name: 'Quarteto [❌]' },
+    { id: 'campominado', name: 'Campo Minado [✅]' },
   ];
 
   // Divide a lista de jogos em grupos de 3 para as linhas
